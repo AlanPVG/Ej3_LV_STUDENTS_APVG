@@ -6,12 +6,12 @@ public class Alumno implements Serializable {
 
     String nombre, apellidos;
     String   genero;
-    int noCuenta;
+    String noCuenta;
 
 
     //Constructor
 
-    Alumno(String nombre_alumno, String apellidosAlumno, String generoAlumno, int noCuentaAlumno){
+    Alumno(String nombre_alumno, String apellidosAlumno, String generoAlumno, String noCuentaAlumno){
         nombre = nombre_alumno;
         apellidos = apellidosAlumno;
         genero = generoAlumno;
@@ -43,11 +43,11 @@ public class Alumno implements Serializable {
         this.genero = genero;
     }
 
-    public int getNoCuenta() {
+    public String getNoCuenta() {
         return noCuenta;
     }
 
-    public void setNoCuenta(int noCuenta) {
+    public void setNoCuenta(String noCuenta) {
         this.noCuenta = noCuenta;
     }
 }

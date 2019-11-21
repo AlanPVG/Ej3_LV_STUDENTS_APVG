@@ -19,11 +19,29 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/textView_release"
+        android:id="@+id/textView_lastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/imageView_poster"
         android:layout_below="@id/textView_name"
+        android:layout_margin="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView_studentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView_poster"
+        android:layout_below="@id/textView_lastName"
+        android:layout_margin="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView_poster"
+        android:layout_below="@id/textView_studentCount"
         android:layout_margin="20dp"
         android:textSize="20sp"/>
 

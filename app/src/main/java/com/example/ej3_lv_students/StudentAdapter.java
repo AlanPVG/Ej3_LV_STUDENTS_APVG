@@ -37,8 +37,14 @@ public class StudentAdapter extends ArrayAdapter<Alumno> {
         TextView name = listItem.findViewById(R.id.textView_name);
         name.setText(currentStudent.getNombre());
 
-        TextView apellidos = listItem.findViewById(R.id.textView_release);
+        TextView apellidos = listItem.findViewById(R.id.textView_lastName);
         apellidos.setText(currentStudent.getApellidos());
+
+        TextView noCuenta = listItem.findViewById(R.id.textView_studentCount);
+        noCuenta.setText(currentStudent.getNoCuenta());
+
+        TextView gender = listItem.findViewById(R.id.textView_gender);
+        gender.setText(currentStudent.getGenero());
 
         return listItem;
     }

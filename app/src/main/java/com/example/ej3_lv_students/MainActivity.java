@@ -31,8 +31,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                listaAlumnos.add( new Alumno(nombre.getText().toString(),apellidos.getText().toString(),String.valueOf(R.id.Genero),Integer.valueOf(R.id.Genero)));
+                listaAlumnos.add( new Alumno(nombre.getText().toString(),apellidos.getText().toString(),genero.getText().toString(),noCuenta.getText().toString()));
                 openListViewActivity();
+                nombre.setText("");
+                apellidos.setText("");
+                noCuenta.setText("");
+                genero.setText("");
             }
         });
     }
