@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ej3_STUDENTS_APVG</string>
+    <string name="title_label">Zodiaco Chino</string>
+    <string name="button_check">Enviar</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_apPat">Apellido paterno</string>
+    <string name="hint_apMat">Apellido materno</string>
+    <string name="hint_genero">Género</string>
+    <string name="hint_no_cuenta">No. de Cuenta</string>
+</resources>
