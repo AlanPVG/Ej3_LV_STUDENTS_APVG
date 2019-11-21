@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     public static final String arrayAlumnos = "com.example.ej3_lv_students.arrayAlumnos";
     Button btnCheck;
     EditText nombre,apellidos,noCuenta,genero;
-    String nombreString;
     public static ArrayList<Alumno> listaAlumnos = new ArrayList<Alumno>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,15 +33,15 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                if(nombre.length()!=0 && apellidos.length()!=0 && noCuenta.length()!=0) {
-                    int selected=rbg.getCheckedRadioButtonId();
-                    RadioButton gender=(RadioButton) findViewById(selected);
+                int selected=rbg.getCheckedRadioButtonId();
+                RadioButton gender=(RadioButton) findViewById(selected);
+                if(nombre.length()!=0 && apellidos.length()!=0 && noCuenta.length()!=0 && rbg.getCheckedRadioButtonId()!=-1) {
                     listaAlumnos.add(new Alumno(nombre.getText().toString(), apellidos.getText().toString(),gender.getText().toString(), noCuenta.getText().toString()));
                     openListViewActivity();
                     nombre.setText("");
                     apellidos.setText("");
                     noCuenta.setText("");
-                    //genero.setText("");
+                    rbg.clearCheck();
                 }
                 else{
                     Toast.makeText(MainActivity.this, "informacion incompleta", Toast.LENGTH_SHORT).show();

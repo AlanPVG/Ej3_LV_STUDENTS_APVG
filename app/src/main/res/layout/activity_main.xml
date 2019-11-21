@@ -118,7 +118,6 @@
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UnknownId" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
