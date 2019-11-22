@@ -3,24 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/imageView_poster"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:text="test"/>
+    <ImageView
+        android:id="@+id/imageView_genderIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        />
 
     <TextView
         android:id="@+id/textView_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/imageView_poster"
+        android:layout_toRightOf="@id/imageView_genderIcon"
         android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/textView_lastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/imageView_poster"
+        android:layout_toRightOf="@id/imageView_genderIcon"
         android:layout_below="@id/textView_name"
         android:textSize="20sp"/>
 
@@ -28,7 +28,6 @@
         android:id="@+id/textView_studentCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/imageView_poster"
         android:layout_below="@id/textView_lastName"
         android:textSize="20sp"/>
 
@@ -36,7 +35,7 @@
         android:id="@+id/textView_gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/imageView_poster"
+        android:layout_toRightOf="@id/imageView_genderIcon"
         android:layout_below="@id/textView_studentCount"
         android:textSize="20sp"/>
 

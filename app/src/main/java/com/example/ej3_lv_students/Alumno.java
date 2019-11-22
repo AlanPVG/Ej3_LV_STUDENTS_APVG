@@ -7,17 +7,21 @@ public class Alumno implements Serializable {
     String nombre, apellidos;
     String   genero;
     String noCuenta;
+    int genderIcon;
 
 
     //Constructor
 
-    Alumno(String nombre_alumno, String apellidosAlumno,String generoAlumno, String noCuentaAlumno){
+    Alumno(int genderIcon, String nombre_alumno, String apellidosAlumno,String generoAlumno, String noCuentaAlumno){
+        this.genderIcon = genderIcon;
         nombre = nombre_alumno;
         apellidos = apellidosAlumno;
         genero = generoAlumno;
         noCuenta = noCuentaAlumno;
 
     }
+
+    public int getGenderIcon(){return genderIcon;}
 
     public String getNombre() {
         return nombre;

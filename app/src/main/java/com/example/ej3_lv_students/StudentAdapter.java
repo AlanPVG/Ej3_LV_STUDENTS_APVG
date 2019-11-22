@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -34,6 +35,12 @@ public class StudentAdapter extends ArrayAdapter<Alumno> {
 
             Alumno currentStudent = listaAlumnos.get(position);
 
+
+        ImageView imageView_genderIcon = (ImageView)listItem.findViewById(R.id.imageView_genderIcon);
+        imageView_genderIcon.setImageResource(currentStudent.getGenderIcon());
+
+
+
         TextView name = listItem.findViewById(R.id.textView_name);
         name.setText(currentStudent.getNombre());
 
@@ -45,6 +52,7 @@ public class StudentAdapter extends ArrayAdapter<Alumno> {
 
         TextView gender = listItem.findViewById(R.id.textView_gender);
         gender.setText(currentStudent.getGenero());
+
 
         return listItem;
     }

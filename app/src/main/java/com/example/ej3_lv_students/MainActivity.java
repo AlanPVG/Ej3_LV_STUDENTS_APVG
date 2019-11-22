@@ -1,6 +1,7 @@
 package com.example.ej3_lv_students;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String arrayAlumnos = "com.example.ej3_lv_students.arrayAlumnos";
     Button btnCheck;
     EditText nombre,apellidos,noCuenta,genero;
+    Image genderIcon;
     public static ArrayList<Alumno> listaAlumnos = new ArrayList<Alumno>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +38,16 @@ public class MainActivity extends AppCompatActivity {
                 int selected=rbg.getCheckedRadioButtonId();
                 RadioButton gender=(RadioButton) findViewById(selected);
                 if(nombre.length()!=0 && apellidos.length()!=0 && noCuenta.length()!=0 && rbg.getCheckedRadioButtonId()!=-1) {
-                    listaAlumnos.add(new Alumno(nombre.getText().toString(), apellidos.getText().toString(),gender.getText().toString(), noCuenta.getText().toString()));
+                    if(gender.getText().toString() == "Male"){
+                        //listaAlumnos.add(new Alumno(R.mipmap.male,nombre.getText().toString(), apellidos.getText().toString(),gender.getText().toString(), noCuenta.getText().toString()));
+                        Toast.makeText(MainActivity.this, "sczsdfsdf incompleta", Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        listaAlumnos.add(new Alumno(R.mipmap.female,nombre.getText().toString(), apellidos.getText().toString(),gender.getText().toString(), noCuenta.getText().toString()));
+                    }
+
+
+                    //listaAlumnos.add(new Alumno(R.mipmap.male,nombre.getText().toString(), apellidos.getText().toString(),gender.getText().toString(), noCuenta.getText().toString()));
                     openListViewActivity();
                     nombre.setText("");
                     apellidos.setText("");
