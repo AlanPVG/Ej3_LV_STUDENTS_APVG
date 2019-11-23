@@ -5,8 +5,8 @@
 
     <ImageView
         android:id="@+id/imageView_genderIcon"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         />
 
     <TextView
@@ -28,6 +28,7 @@
         android:id="@+id/textView_studentCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView_genderIcon"
         android:layout_below="@id/textView_lastName"
         android:textSize="20sp"/>
 
