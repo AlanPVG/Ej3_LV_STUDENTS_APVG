@@ -30,7 +30,16 @@ Es posible borrar el registro de estudiantes al presionar el botón destinado pa
    
    Por otro lado, regresando a la primera activity, al presionar el botón para borrar el registro se efectuará la eliminación de items y se despliegará un mensaje Toast indicador
    
-    ![sc6](screens-ej3/Screenshot_2019-11-26-11-48-02.png)
+   ![sc6](screens-ej3/Screenshot_2019-11-26-11-48-02.png)
+   
+   La aplicación cuenta con soporte para el idioma en inglés:
+   ![sc7](screens-ej3/Screenshot_2019-11-26-11-48-52.png)
+   
+   Dentro de las validaciones consideradas se encuentran la de llenado de todos los campos y la correspondiente a cumplir con el número de dígitos para el número de cuenta estudiantil.
+   ![sc8](screens-ej3/Screenshot_2019-11-26-11-49-06.png)
+   ![sc9](screens-ej3/Screenshot_2019-11-26-11-49-50.png)
+   
+   
     
     
   
