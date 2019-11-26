@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+//Código para la activity contenedora del listView
 public class listViewActivity extends AppCompatActivity {
     ListView lvDatosAlumno;
     private StudentAdapter adaptador;
@@ -24,9 +25,10 @@ public class listViewActivity extends AppCompatActivity {
         final ArrayList<Alumno> arrDatosStudents = (ArrayList<Alumno>) getIntent().getSerializableExtra(MainActivity.arrayAlumnos);
         lvDatosAlumno = findViewById(R.id.datosAlumno);
 
-        adaptador = new StudentAdapter(this,arrDatosStudents);
-        lvDatosAlumno.setAdapter(adaptador);
+        adaptador = new StudentAdapter(this,arrDatosStudents);//Creación de nuevo adaptador custom tipo "StudentAdapter"
+        lvDatosAlumno.setAdapter(adaptador);//Se configura el listView de acuerdo a la estructura del adaptador creado
 
+        //Cuando se presione un item, se muestra su ID a través de un mensaje Toast
         lvDatosAlumno.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

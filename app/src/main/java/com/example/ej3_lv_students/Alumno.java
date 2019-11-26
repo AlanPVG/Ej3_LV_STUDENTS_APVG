@@ -2,11 +2,14 @@ package com.example.ej3_lv_students;
 
 import java.io.Serializable;
 
+//Clase Alumno
+
 public class Alumno implements Serializable {
 
+    //Atributos
     String nombre, apellidos;
     String   genero;
-    String noCuenta;
+    String noCuenta;//Numero de cuenta
     int genderIcon;
     int ID;
     static public int counter=1;
@@ -14,15 +17,16 @@ public class Alumno implements Serializable {
 
     //Constructor
 
-    Alumno(int genderIcon, String nombre_alumno, String apellidosAlumno,String generoAlumno, String noCuentaAlumno){
+    Alumno(int genderIcon, String nombre, String apellidos,String genero, String noCuenta){
         this.genderIcon = genderIcon;
-        nombre = nombre_alumno;
-        apellidos = apellidosAlumno;
-        genero = generoAlumno;
-        noCuenta = noCuentaAlumno;
-        this.ID = counter++;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.genero = genero;
+        this.noCuenta = noCuenta;
+        this.ID = counter++;//Se incrementa el contador cada que se crea un nuevo registro de alumno
 
     }
+
 
     public int getGenderIcon(){return genderIcon;}
 

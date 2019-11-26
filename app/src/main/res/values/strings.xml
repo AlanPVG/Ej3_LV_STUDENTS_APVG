@@ -9,7 +9,6 @@
     <string name="hint_genero">Género</string>
     <string name="hint_no_cuenta">No. de Cuenta</string>
     <string name="toastIncompleteForm"> Todos los campos deben ser llenados </string>
-    <string name="clearListView"> Borrar todos los elementos </string>
     <string name="genderMale"> Masculino </string>
     <string name="genderFemale"> Femenino </string>
     <string name="toastIncompleteNoAccount"> El número de cuenta debe ser de 10 dígitos </string>

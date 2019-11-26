@@ -9,7 +9,6 @@
     <string name="hint_genero">Gender</string>
     <string name="hint_no_cuenta">Account Number</string>
     <string name="toastIncompleteForm"> All fields must be filled</string>
-    <string name="clearListView"> Clear list of elements </string>
     <string name="genderMale"> Male </string>
     <string name="genderFemale"> Female </string>
     <string name="toastIncompleteNoAccount"> Account number must be 10 digits long </string>
