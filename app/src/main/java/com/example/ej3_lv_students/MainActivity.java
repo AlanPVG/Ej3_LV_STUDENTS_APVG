@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Button bttnSubmit,bttnCheck,bttnClear;
     EditText nombre,apellidos,noCuenta,genero;
     String genderString = null;
+    int studentID=1;
 
     public static ArrayList<Alumno> listaAlumnos = new ArrayList<Alumno>();
     @Override
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         apellidos.setText("");
                         noCuenta.setText("");
                         rbg.clearCheck();
+
                     }
                     else{
                         Toast.makeText(MainActivity.this, getString(R.string.toastIncompleteNoAccount), Toast.LENGTH_SHORT).show();
@@ -79,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 listaAlumnos.clear();
+                Alumno.counter=1;
+                Toast.makeText(MainActivity.this, getString(R.string.clearListView), Toast.LENGTH_SHORT).show();
             }
         });
     }

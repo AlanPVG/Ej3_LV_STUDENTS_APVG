@@ -8,6 +8,8 @@ public class Alumno implements Serializable {
     String   genero;
     String noCuenta;
     int genderIcon;
+    int ID;
+    static public int counter=1;
 
 
     //Constructor
@@ -18,6 +20,7 @@ public class Alumno implements Serializable {
         apellidos = apellidosAlumno;
         genero = generoAlumno;
         noCuenta = noCuentaAlumno;
+        this.ID = counter++;
 
     }
 
@@ -55,5 +58,9 @@ public class Alumno implements Serializable {
 
     public void setNoCuenta(String noCuenta) {
         this.noCuenta = noCuenta;
+    }
+
+    public int getID(){
+        return  ID;
     }
 }
