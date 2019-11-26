@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">Ej3_STUDENTS_APVG</string>
-    <string name="title_label">Zodiaco Chino</string>
+    <string name="title_label">Registro de Estudiantes</string>
     <string name="button_check">Enviar</string>
     <string name="hint_name">Nombre</string>
-    <string name="hint_apPat">Apellido paterno</string>
-    <string name="hint_apMat">Apellido materno</string>
+    <string name="hint_apellidos">Apellidos</string>
     <string name="hint_genero">Género</string>
     <string name="hint_no_cuenta">No. de Cuenta</string>
+    <string name="toastIncompleteForm"> Todos los campos deben ser llenados </string>
+    <string name="clearListView"> Borrar todos los elementos </string>
+    <string name="genderMale"> Masculino </string>
+    <string name="genderFemale"> Femenino </string>
+    <string name="toastIncompleteNoAccount"> El número de cuenta debe ser de 10 dígitos </string>
 </resources>

@@ -42,22 +42,26 @@ public class MainActivity extends AppCompatActivity {
                 maleRadioButton = (RadioButton) findViewById(R.id.radioButton1);
 
                 if(nombre.length()!=0 && apellidos.length()!=0 && noCuenta.length()!=0 && rbg.getCheckedRadioButtonId()!=-1) {
-                    genderString = gender.getText().toString();
-                    if(maleRadioButton.isChecked()){
-                        listaAlumnos.add(new Alumno(R.mipmap.male,nombre.getText().toString(), apellidos.getText().toString(),gender.getText().toString(), noCuenta.getText().toString()));
-                    }
-                    else {
-                        listaAlumnos.add(new Alumno(R.mipmap.female,nombre.getText().toString(), apellidos.getText().toString(),gender.getText().toString(), noCuenta.getText().toString()));
-                    }
+                    if (noCuenta.length()==10) {
+                        genderString = gender.getText().toString();
+                        if (maleRadioButton.isChecked()) {
+                            listaAlumnos.add(new Alumno(R.mipmap.male, nombre.getText().toString(), apellidos.getText().toString(), gender.getText().toString(), noCuenta.getText().toString()));
+                        } else {
+                            listaAlumnos.add(new Alumno(R.mipmap.female, nombre.getText().toString(), apellidos.getText().toString(), gender.getText().toString(), noCuenta.getText().toString()));
+                        }
 
-                    openListViewActivity();
-                    nombre.setText("");
-                    apellidos.setText("");
-                    noCuenta.setText("");
-                    rbg.clearCheck();
+                        openListViewActivity();
+                        nombre.setText("");
+                        apellidos.setText("");
+                        noCuenta.setText("");
+                        rbg.clearCheck();
+                    }
+                    else{
+                        Toast.makeText(MainActivity.this, getString(R.string.toastIncompleteNoAccount), Toast.LENGTH_SHORT).show();
+                    }
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "informacion incompleta", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, getString(R.string.toastIncompleteForm), Toast.LENGTH_SHORT).show();
                 }
             }
         });

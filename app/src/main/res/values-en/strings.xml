@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ej3_STUDENTS_APVG</string>
+    <string name="title_label">Students Register</string>
+    <string name="button_check">Send</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_apellidos">Last Name</string>
+    <string name="hint_genero">Gender</string>
+    <string name="hint_no_cuenta">Account Number</string>
+    <string name="toastIncompleteForm"> All fields must be filled</string>
+    <string name="clearListView"> Clear list of elements </string>
+    <string name="genderMale"> Male </string>
+    <string name="genderFemale"> Female </string>
+    <string name="toastIncompleteNoAccount"> Account number must be 10 digits long </string>
+</resources>
