@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_green_light"
+    android:background="@android:color/holo_orange_dark"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,6 +12,7 @@
         android:layout_width="176dp"
         android:layout_height="107dp"
         android:layout_marginTop="10dp"
+
         android:layout_marginBottom="25dp"
         android:gravity="center"
         android:text="@string/title_label"
@@ -171,5 +172,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bttnSubmit" />
+
+    <ImageView
+        android:id="@+id/creditsButton"
+        android:layout_width="103dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@mipmap/student"
+        app:layout_constraintBottom_toBottomOf="@id/studentRegister"
+        app:layout_constraintStart_toEndOf="@id/studentRegister"
+        app:layout_constraintTop_toTopOf="@id/studentRegister"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
