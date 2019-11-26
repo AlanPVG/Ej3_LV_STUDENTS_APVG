@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
                             listaAlumnos.add(new Alumno(R.mipmap.female, nombre.getText().toString(), apellidos.getText().toString(), gender.getText().toString(), noCuenta.getText().toString()));
                         }
 
-                        openListViewActivity();
                         //Se limpian los campos del formulario
+                        Toast.makeText(MainActivity.this, getString(R.string.succesfulRegister), Toast.LENGTH_SHORT).show();
                         nombre.setText("");
                         apellidos.setText("");
                         noCuenta.setText("");

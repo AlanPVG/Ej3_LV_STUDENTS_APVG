@@ -13,4 +13,5 @@
     <string name="genderFemale"> Femenino </string>
     <string name="toastIncompleteNoAccount"> El número de cuenta debe ser de 10 dígitos </string>
     <string name="toastRegisterCleared"> El registro ha sido limpiado </string>
+    <string name="succesfulRegister"> Alumno registrado con éxito </string>
 </resources>
