@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     public static final String arrayAlumnos = "com.example.ej3_lv_students.arrayAlumnos";
-    Button btnCheck;
+    Button bttnSubmit,bttnCheck,bttnClear;
     EditText nombre,apellidos,noCuenta,genero;
     String genderString = null;
 
@@ -29,9 +29,11 @@ public class MainActivity extends AppCompatActivity {
         nombre = findViewById(R.id.Nombre);
         apellidos = findViewById(R.id.apPaterno);
         noCuenta = findViewById(R.id.No_Cuenta);
-        btnCheck = findViewById(R.id.btnCheck);
+        bttnSubmit = findViewById(R.id.bttnSubmit);
+        bttnCheck = findViewById(R.id.bttnCheck);
+        bttnClear = findViewById(R.id.bttnClear);
 
-        btnCheck.setOnClickListener(new View.OnClickListener() {
+        bttnSubmit.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -63,6 +65,20 @@ public class MainActivity extends AppCompatActivity {
                 else{
                     Toast.makeText(MainActivity.this, getString(R.string.toastIncompleteForm), Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        bttnCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openListViewActivity();
+            }
+        });
+
+        bttnClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                listaAlumnos.clear();
             }
         });
     }

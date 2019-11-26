@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Ej3_STUDENTS_APVG</string>
     <string name="title_label">Registro de Estudiantes</string>
-    <string name="button_check">Enviar</string>
+    <string name="button_submit">Enviar</string>
+    <string name="button_check">Ir a Registro</string>
+    <string name="button_clear">Limpiar Registro</string>
     <string name="hint_name">Nombre</string>
     <string name="hint_apellidos">Apellidos</string>
     <string name="hint_genero">Género</string>
