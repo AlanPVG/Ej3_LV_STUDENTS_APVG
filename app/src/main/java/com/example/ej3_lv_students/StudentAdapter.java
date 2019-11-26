@@ -19,6 +19,7 @@ public class StudentAdapter extends ArrayAdapter<Alumno> {
     private Context sContext;
     private List<Alumno> listaAlumnos = new ArrayList<>();
 
+
     public StudentAdapter(@NonNull Context context, ArrayList<Alumno> list){
         super(context,0,list);
         sContext = context;
@@ -38,8 +39,6 @@ public class StudentAdapter extends ArrayAdapter<Alumno> {
 
         ImageView imageView_genderIcon = (ImageView)listItem.findViewById(R.id.imageView_genderIcon);
         imageView_genderIcon.setImageResource(currentStudent.getGenderIcon());
-
-
 
         TextView name = listItem.findViewById(R.id.textView_name);
         name.setText(currentStudent.getNombre());
