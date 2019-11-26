@@ -6,7 +6,7 @@
     <string name="button_clear">Clear Register</string>
     <string name="hint_name">Name</string>
     <string name="hint_apellidos">Last Name</string>
-    <string name="hint_genero">Gender</string>
+    <string name="hint_genero">Gender:</string>
     <string name="hint_no_cuenta">Account Number</string>
     <string name="toastIncompleteForm"> All fields must be filled</string>
     <string name="genderMale"> Male </string>

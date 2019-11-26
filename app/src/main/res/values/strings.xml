@@ -6,7 +6,7 @@
     <string name="button_clear">Limpiar Registro</string>
     <string name="hint_name">Nombre</string>
     <string name="hint_apellidos">Apellidos</string>
-    <string name="hint_genero">Género</string>
+    <string name="hint_genero">Género:</string>
     <string name="hint_no_cuenta">No. de Cuenta</string>
     <string name="toastIncompleteForm"> Todos los campos deben ser llenados </string>
     <string name="genderMale"> Masculino </string>

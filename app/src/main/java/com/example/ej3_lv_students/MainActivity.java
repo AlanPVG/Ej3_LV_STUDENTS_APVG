@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final RadioGroup rbg=(RadioGroup) findViewById(R.id.radioGroup1);//Grupo de botones radiales definidos para el género
         nombre = findViewById(R.id.Nombre);
-        apellidos = findViewById(R.id.apPaterno);
+        apellidos = findViewById(R.id.apellidos);
         noCuenta = findViewById(R.id.No_Cuenta);
         bttnSubmit = findViewById(R.id.bttnSubmit);
         bttnCheck = findViewById(R.id.bttnCheck);

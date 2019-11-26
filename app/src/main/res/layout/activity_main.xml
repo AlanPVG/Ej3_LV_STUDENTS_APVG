@@ -12,7 +12,7 @@
         android:layout_width="176dp"
         android:layout_height="107dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="25dp"
         android:gravity="center"
         android:text="@string/title_label"
         android:textAllCaps="false"
@@ -25,16 +25,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.051" />
 
+    <!-- Caja de texto - Nombre -->
     <EditText
         android:id="@+id/Nombre"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:layout_marginBottom="500dp"
         android:hint="@string/hint_name"
         android:ems="10"
         android:inputType="text"
-        android:maxLength="15"
+        android:maxLength="25"
         android:textSize="25sp"
         android:background="@drawable/edit_text_border"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,18 +43,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/studentRegister" />
 
-    <!-- Caja de texto - Fecha de nacimiento -->
+    <!-- Caja de texto - Apellidos -->
     <EditText
-        android:id="@+id/apPaterno"
+        android:id="@+id/apellidos"
         android:layout_width="230dp"
         android:layout_height="35dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="500dp"
         android:hint="@string/hint_apellidos"
         android:ems="10"
         android:inputType="text"
-        android:maxLength="10"
-        android:textSize="14sp"
+        android:maxLength="50"
+        android:textSize="20sp"
         android:background="@drawable/edit_text_border"
         app:layout_constraintTop_toBottomOf="@+id/Nombre"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,28 +66,48 @@
         android:id="@+id/No_Cuenta"
         android:layout_width="230dp"
         android:layout_height="35dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="500dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="400dp"
         android:hint="@string/hint_no_cuenta"
         android:ems="10"
         android:inputType="number"
         android:maxLength="10"
         android:textSize="20sp"
         android:background="@drawable/edit_text_border"
-        app:layout_constraintTop_toBottomOf="@+id/apPaterno"
+        app:layout_constraintTop_toBottomOf="@+id/apellidos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
 
+    <!-- Grupo de botones radiales de selección - género -->
+
+    <TextView
+        android:id="@+id/genderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/hint_genero"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/No_Cuenta"
+        app:layout_constraintBottom_toTopOf="@id/radioGroup1"
+        app:layout_constraintEnd_toEndOf="@id/radioGroup1"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="@id/radioGroup1" />
 
     <RadioGroup
         android:id="@+id/radioGroup1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/No_Cuenta"
+        app:layout_constraintTop_toBottomOf="@+id/genderLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         >
@@ -114,33 +135,40 @@
         android:id="@+id/bttnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
         android:text="@string/button_submit"
+        android:textAllCaps="false"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
 
     <Button
         android:id="@+id/bttnCheck"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/button_check"
+        android:textAllCaps="false"
         android:textSize="15sp"
+        android:background="@drawable/button_shape"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintHorizontal_bias="0.683"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bttnSubmit" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
 
     <Button
         android:id="@+id/bttnClear"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/button_clear"
+        android:textAllCaps="false"
         android:textSize="15sp"
+        android:background="@drawable/button_shape"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.867"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bttnSubmit" />
 
