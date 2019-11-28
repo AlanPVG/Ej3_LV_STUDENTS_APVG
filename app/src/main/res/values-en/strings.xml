@@ -14,4 +14,6 @@
     <string name="toastIncompleteNoAccount"> Account number must be 10 digits long </string>
     <string name="toastRegisterCleared"> The register has been cleared </string>
     <string name="succesfulRegister"> The student has been succesfully registered </string>
+    <string name="identificationToast"> The ID of the selected element is: </string>
+    <string name="emptyRegister"> The register is empty </string>
 </resources>

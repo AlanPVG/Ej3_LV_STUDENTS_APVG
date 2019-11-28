@@ -85,7 +85,11 @@ public class MainActivity extends AppCompatActivity {
         bttnCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openListViewActivity();
+                if (listaAlumnos.size()!=0)
+                    openListViewActivity();
+                else
+                    Toast.makeText(MainActivity.this, getString(R.string.emptyRegister), Toast.LENGTH_SHORT).show();
+
             }
         });
 
